@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/ddd823af8c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <!-- https://www.creative-tim.com/twcomponents/cheatsheet -->
+  <!-- min la taille du bloc et il va faloir scroller -->
+  <body class="min-h-screen">
+    <div class="container mx-auto min-h-screen bg-stone-100">
+      <header
+        class="grid-col-2 m flex items-center border-b bg-white p-4 shadow-sm"
+      >
+        <img src="./assets/images/logo.png" alt="" srcset="" class="w-20" />
+        <p class="font-bold">Biaritz Place</p>
+      </header>
+      <!-- grid-cols-[2fr_1fr] : crée un modèle de colonnes pour la grille avec deux colonnes, où la première colonne occupe deux fractions de l'espace disponible et la seconde colonne une fraction. -->
+      <main class="container grid grid-cols-[2fr_1fr] grid-rows-1 p-4">
+        <div class="border bg-white p-6 text-sm">
+          <a
+            href=""
+            class="mb-6 gap-x-3 font-bold transition-colors hover:text-blue-500"
+          >
+            <i class="fa-solid fa-arrow-left fa-sm"></i> Retour à la liste
+          </a>
+          <div class="mb-4 mt-4 font-bold">
+            <h2>Moyen de paiement</h2>
+          </div>
+          <div class="rounded-lg border p-4">
+            <h4 class="mb-4 text-sm font-bold">Cartes sauvegarder</h4>
+            <!-- gid avec repartition equitable -->
+
+            <div class="grid grid-cols-2 grid-rows-2 gap-2 p-2">
+              <label
+                for="Paypal"
+                class="flex cursor-pointer items-start rounded-lg border p-4 transition-colors hover:bg-blue-500 hover:text-white"
+              >
+                <i
+                  class="fa-brands fa-paypal li mr-4 text-sky-500 transition-colors group-hover:text-white"
+                ></i>
+                <div class="flex-auto">
+                  <h4
+                    class="mb-2 font-bold leading-4 transition-colors group-hover:text-white"
+                  >
+                    Paypal finissant par 1234
+                  </h4>
+                  <p class="text-xs text-stone-500 group-hover:text-white">
+                    Expire le 09/2026
+                  </p>
+                </div>
+                <input
+                  type="radio"
+                  name="paiement"
+                  id="Paypal"
+                  class="self-center rounded-lg border"
+                />
+              </label>
+              <label
+                for="Mastercard"
+                class="flex cursor-pointer items-start rounded-lg border p-4 transition-colors hover:bg-blue-500 hover:text-white"
+              >
+                <i
+                  class="fa-brands fa-cc-mastercard li mr-4 text-sky-500 transition-colors group-hover:text-white"
+                ></i>
+                <div class="flex-auto">
+                  <h4
+                    class="mb-2 font-bold leading-4 transition-colors group-hover:text-white"
+                  >
+                    Mastercard finissant par 1234
+                  </h4>
+                  <p class="text-xs text-stone-500 group-hover:text-white">
+                    Expire le 09/2026
+                  </p>
+                </div>
+                <input
+                  type="radio"
+                  name="Mastercard"
+                  id="Mastercard"
+                  class="self-center rounded-lg border"
+                />
+              </label>
+              <label
+                for="visa"
+                class="flex cursor-pointer items-start rounded-lg border p-4 transition-colors hover:bg-blue-500 hover:text-white"
+              >
+                <i
+                  class="fa-brands fa-cc-visa li mr-4 text-sky-500 transition-colors group-hover:text-white"
+                ></i>
+                <div class="flex-auto">
+                  <h4
+                    class="mb-2 font-bold leading-4 transition-colors group-hover:text-white"
+                  >
+                    Visa finissant par 1234
+                  </h4>
+                  <p class="text-xs text-stone-500 group-hover:text-white">
+                    Expire le 09/2026
+                  </p>
+                </div>
+                <input
+                  type="radio"
+                  name="visa"
+                  id="visa"
+                  class="self-center rounded-lg border"
+                />
+              </label>
+              <div
+                class="flex cursor-pointer flex-col items-center justify-center rounded-lg border p-4 text-sky-500 transition-colors hover:bg-blue-500 hover:text-white"
+              >
+                <a href="#"
+                  ><i class="fa-solid fa-circle-plus mr-3"></i>Ajouter une
+                  carte</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 rounded-lg border bg-white p-6 text-sm">
+            <div class="flex-col gap-y-4 border-b pb-4">
+              <h3 class="text-base font-bold">Politique d'annulation</h3>
+              <h4 class="text-sm">Gratuit apres la 30 nobembre 2025</h4>
+              <p>
+                Apres cette prediode ce n'est plus possible
+                <a href="" class="font-bold underline hover:text-blue-500"
+                  >Voir nos conditions d'annulation.</a
+                >
+              </p>
+            </div>
+            <div class="mt-4 flex-col gap-y-4 pb-4">
+              <h3 class="text-base font-bold">Politique d'annulation</h3>
+              <h4 class="text-sm">Gratuit apres la 30 nobembre 2025</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquid, porro vero. Consequuntur recusandae repudiandae .
+              </p>
+              <ul class="list-inside list-disc">
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="border font-bold">Moyen de paiment</div>
+      </main> 
+    </div>
+  </body>
+</html>
